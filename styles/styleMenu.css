@@ -1,0 +1,169 @@
+header{
+    display: flex;
+    
+}
+
+
+.container {
+    display: flex;
+    
+}
+
+#menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    background-color: white;
+    border-radius: 0 40% 40% 0;
+    width: 0px;
+    height: 0px;
+    margin-top: 20px;
+    
+    
+}
+
+.movMenu{
+    animation: movMenu 1s ease-in-out forwards;
+}
+
+.movMenu2{
+    animation: movMenu2 1s ease-in-out forwards;
+}
+
+.abreMenu{
+    animation: abreMenu 1s ease-in-out forwards;
+}
+
+.abreMenu2{
+    animation: abreMenu2 1s ease-in-out forwards;
+}
+
+#menu-btn img{
+    position: absolute;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+    top: 27px;
+    left: 5px;
+    
+}
+
+.sidebar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 0;
+    background: #ffffff;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #a7a7a7;
+    font-size: 28px;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.casinha{
+    position: absolute;
+    z-index: 1;
+    left: 43%;
+    top: 3%;
+}
+
+.casinha:hover{
+    width: 43px;
+    cursor: pointer;
+}
+
+.casaR{
+    animation: casaR 1s ease-in-out forwards;
+}
+
+.casaL{
+    animation: casaL 1s ease-in-out forwards;
+}
+
+
+
+
+
+@keyframes movMenu {
+    0%{
+        margin-left: 0;
+    }
+
+    100%{
+        margin-left: 150px;
+    }
+}
+
+@keyframes movMenu2 {
+    0%{
+        margin-left: 150px;
+    }
+
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes abreMenu{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 150px;
+    }
+
+}
+
+@keyframes abreMenu2 {
+    0%{
+        width: 150px;
+    }
+    100%{
+        width: 0px;
+    }
+
+}
+
+@keyframes casaR{
+    0%{
+        left: 43%
+    }
+    100%{
+        left: 85%;
+    }
+}
+
+@keyframes casaL{
+    0%{
+        left:85%
+    }
+    100%{
+        left: 43%;
+    }
+}
+
+
+

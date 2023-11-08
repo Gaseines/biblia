@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/coolvetica\ rg.otf) format('opentype');
+}
+
+
+main{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.enunciado{
+    text-align: center;
+    color: lightgray;
+    font-size: 20px;
+    
+}
+
+.divisao{
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#containerMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main-btn{
+    font-family: 'padrao', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 180px;
+    margin-top: 20px;
+    background-image: url(../midias/btnBK.jpg);
+    border-radius: 30px;
+    border: 2px solid rgb(173, 173, 173);
+
+    box-shadow: inset 5px 5px 5px #d9d9d94f,
+            
+    
+}
+
+.main-btn:hover{
+    cursor: pointer;
+    animation: animate__pulse;
+    
+}
