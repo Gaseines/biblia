@@ -11,15 +11,17 @@ main{
 
 .enunciado{
     text-align: center;
-    color: lightgray;
+    color: var(--brancoPreto);
     font-size: 20px;
+
+    margin-top: 20px;
     
 }
 
 .divisao{
     width: 80%;
     height: 1px;
-    background-color: lightgray;
+    background-color: var(--brancoPreto);
     margin: auto;
     margin-top: 10px;
 }
@@ -32,27 +34,68 @@ main{
     
 }
 
-.main-btn{
+
+/*      BOTÕES                 */
+
+
+
+  
+.wrapper {
+    max-width: 65rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 5rem;
+    text-align: center;
+    background: #fff;
+    border: 0.5rem solid var(--cinzaEscuroClaro);
+  }
+  hr {
+    border: 0;
+    border-bottom: 0.0625rem solid #bbb;
+    margin: 3rem 0;
+  }
+  button {
+    width: 180px;
     font-family: 'padrao', sans-serif;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 180px;
-    margin-top: 20px;
-    background-image: url(../midias/btnBK.jpg);
-    border-radius: 30px;
-    border: 2px solid rgb(173, 173, 173);
-
-    box-shadow: inset 5px 5px 5px #d9d9d94f,
-            
-    
-}
-
-.main-btn:hover{
     cursor: pointer;
-    animation: animate__pulse;
+    font-size: 2em;
+    background-color: var(--cinzaEscuroClaro);
+    color: var(--brancoPreto);
+    border: 0.25rem solid var(--cinzaEscuroClaro);
+    border-radius: 10px;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  button:hover {
+    color: var(--pretoBranco);
+  }
+  button::after {
+    content: "";
+    background-color: var(--cinzaClaroEscuro);
+    position: absolute;
+    border-radius: 15px;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+
+  button[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  button[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  button.grow_box:hover::after{
+    transform: scale(1, 1);
+  }
     
-}

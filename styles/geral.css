@@ -1,6 +1,7 @@
 @import url(./styleMenu.css);
 @import url(./background.css);
 @import url(./main.css);
+@import url(./mediaQuery.css);
 
 
 *{
@@ -8,3 +9,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --brancoPreto: white;
+    --cinzaEscuroClaro: #2A2B2F;
+    --cinzaClaroEscuro: #7b7b7b;
+    --pretoBranco: black;
+    --pretoAmarelo: black;
+}
+
+.light-mode:root{
+    --brancoPreto: black;
+    --cinzaEscuroClaro:  #7b7b7b;
+    --cinzaClaroEscuro: #2A2B2F;
+    --pretoBranco: white;
+    --pretoAmarelo: orange;
+} 

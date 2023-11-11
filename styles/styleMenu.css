@@ -13,8 +13,8 @@ header{
     font-size: 30px;
     cursor: pointer;
     padding: 20px;
-    color: white;
-    background-color: white;
+    color: var(--brancoPreto);
+    background-color: var(--brancoPreto);
     border-radius: 0 40% 40% 0;
     width: 0px;
     height: 0px;
@@ -47,15 +47,16 @@ header{
     top: 27px;
     left: 5px;
     
+    
 }
 
 .sidebar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 0;
-    background: #ffffff;
+    background: var(--brancoPreto);
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;
@@ -66,14 +67,14 @@ header{
     padding: 10px 8px 10px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: var(--pretoBranco);
     display: block;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #a7a7a7;
+    color: var(--cinzaEscuroClaro);
     font-size: 28px;
 }
 
@@ -84,6 +85,7 @@ header{
 }
 
 .casinha{
+    cursor: pointer;
     position: absolute;
     z-index: 1;
     left: 43%;
@@ -102,6 +104,58 @@ header{
 .casaL{
     animation: casaL 1s ease-in-out forwards;
 }
+
+.container-light-mode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 4%;
+}
+
+.btn-light-mode{
+    cursor: pointer;
+    width: 55px;
+    height: 20px;
+    background-color: var(--cinzaClaroEscuro);
+    border: solid 1px white;
+
+    border-radius: 100px;
+    z-index: 3;
+    
+}
+
+.bolinha{
+    content: '';
+    
+    width: 19px;
+    height: 19px;
+    background-color: var(--pretoAmarelo);
+    border-radius: 50%;
+    border: 1px solid white;
+    
+    position: absolute;
+    top: 1%;
+    left: -10%;
+    
+}
+
+#btn-light-mode-p{
+    width: 25px;
+    margin-top: 10px;
+}
+
+.lMode{
+    animation: lMode 1s ease-in-out forwards;
+}
+
+.rMode{
+    animation: rMode 1s ease-in-out forwards;
+}
+
+
+
 
 
 
@@ -162,6 +216,26 @@ header{
     }
     100%{
         left: 43%;
+    }
+}
+
+@keyframes lMode{
+    0%{
+        left: -10%;
+    }
+
+    100%{
+        left: 70%;
+    }
+}
+
+@keyframes rMode{
+    0%{
+        left: 70%;
+    }
+
+    100%{
+        left: -10%;
     }
 }
 

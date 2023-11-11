@@ -1,0 +1,58 @@
+
+
+
+@media screen and (min-width: 800px) {
+    #menu-btn{
+        display: none;
+    }
+    #menu-btn img{
+        display: none;
+    }
+
+    .sidebar{
+        position: inherit;
+        display: flex;
+        padding-top: 30px;
+        height: 80px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .sidebar a {
+        color: var(--brancoPreto);
+        padding: 0px 20px 20px 40px;
+    }
+
+    
+    header{
+        margin: auto;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1440px;
+        
+    }
+
+    .casinha{
+        position: fixed;
+        left: 48%;
+        
+        z-index: 2;
+        
+    }
+
+    main{
+        margin: auto;
+        max-width: 1440px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1440px){
+    .divisao{
+        width: 90%;
+    }
+}
