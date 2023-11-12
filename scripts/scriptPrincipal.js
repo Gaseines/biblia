@@ -4,6 +4,7 @@ let btn = document.getElementById('menu-btn')
 let burguer = document.querySelector('.burguer')
 let casa = document.querySelector('.casinha')
 let containerDarkLight = document.querySelector('.container-light-mode')
+let cabecalho = document.querySelector('#cabecalho')
 
 
 let bolinhaDarkLight = document.querySelector('.bolinha')
@@ -85,25 +86,28 @@ btn.addEventListener('click', abrirMenu)
 
 function mudouTamanho(){
     if(window.innerWidth >= 800){
-        menu.style.display = 'flex'
-        menu.style.paddingTop = '30px'
-        menu.style.height = '80px'
+        
+        menu.classList.remove('abreMenu')
         menu.style.width = '100%'
-        menu.style.background = 'transparent'
-        opcSidebar.style.color = 'var(--brancoPreto)'
+        
+        
+        
+        
+        
+    }else{
+        menu.style.width = '0px'
+        burguer.classList.remove('movMenu')
+        burguer.classList.add('movMenu2')
+        btn.classList.remove('movMenu')
+        btn.classList.add('movMenu2')
+        casa.classList.remove('casaR')
+        casa.classList.add('casaL')
+        containerDarkLight.style.opacity = '100%'
 
-        menu.style.position = 'inherit'
-        
-        
-        
-    }else {
-        menu.style.display = 'block'
-        menu.style.paddingTop = '60px'
-        menu.style.height = '100%'
-        menu.style.width = '0'
-        menu.style.background = 'var(--brancoPreto)'
-        opcSidebar.style.color = 'var(--pretoBranco)'
-
-        header.height = '0px'
+        setTimeout(() =>{
+            burguer.classList.remove('movMenu2')
+            btn.classList.remove('movMenu2')
+            casa.classList.remove('casaL')
+        },500)
     }
 }

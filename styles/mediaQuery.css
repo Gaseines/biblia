@@ -18,7 +18,7 @@
         background-color: transparent;
     }
 
-    .sidebar a {
+    .sidebarOpc {
         color: var(--brancoPreto);
         padding: 0px 20px 20px 40px;
     }
@@ -28,7 +28,6 @@
         margin: auto;
         height: 80px;
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
         max-width: 1440px;
