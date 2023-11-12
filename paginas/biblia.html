@@ -3,9 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/geral.css">
     <title>Bíblia</title>
 </head>
-<body>
-    <h1>Olá mundo!</h1>
+<body style="background-color: var(--pretoBranco);" onresize="mudouTamanho()">
+    <div style="margin-bottom: 30px;" id="cabecalho">
+        <header>
+    
+            
+    
+            <div class="sidebar">
+                <a href="#" class="sidebarOpc">Bíblia</a>
+                <a href="#" class="sidebarOpc">Tópicos</a>
+            </div>
+            <div id="menu-btn"><img src="../midias/burguer.png" class="burguer"></div>
+            
+        
+    
+            <svg class="casinha" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" viewBox="0,0,256,256"
+    style="fill:#000000;">
+    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-0.26712,0.00003 -0.52312,0.10694 -0.71094,0.29688l-10.08594,8.80078c-0.12774,0.09426 -0.20313,0.24359 -0.20312,0.40234c0,0.27614 0.22386,0.5 0.5,0.5h2.5v8c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-6h4v6c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-8h2.5c0.27614,0 0.5,-0.22386 0.5,-0.5c0.00001,-0.15876 -0.07538,-0.30808 -0.20312,-0.40234l-10.08008,-8.79492c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.18782,-0.18994 -0.44382,-0.29684 -0.71094,-0.29687z"></path></g></g>
+    </svg>
+    
+    
+    
+    <div class="container-light-mode">
+        <div class="btn-light-mode">
+            <div class="bolinha"></div>
+        </div>
+        <img id="btn-light-mode-p" src="../midias/lua.png" alt="" >
+    </div>
+    
+    </header>
+    
+    </div>
+
+    <div id="mainBiblia">
+        <div class="containerLivros">
+            <div class="livro">
+                <div class="abLivro"><p class="abreviacao escritaLivros">Gn</p></div>
+                <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Gênesis</p></div>    
+        </div>
+
+        <div class="livro">
+            <div class="abLivro"><p class="abreviacao escritaLivros">Êx</p></div>
+            <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Êxodo</p></div>    
+    </div>
+
+    <div class="livro">
+        <div class="abLivro"><p class="abreviacao escritaLivros">Lv</p></div>
+        <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Levítico</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Nm</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Números</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Dt</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.1rem; padding-left: 5px; padding-right: 3px;">Deuteronômio</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Js</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Josué</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Jz</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Juízes</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Rt</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Rute</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">1Sm</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Samuel</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">2Sm</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Samuel</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">1Rs</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Reis</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">2Rs</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Reis</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">1Cr</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Crônicas</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">2Cr</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Crônicas</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ed</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Esdras</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ne</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Neemias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Et</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ester</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Jó</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jó</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Sl</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Salmos</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Pv</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Provérbios</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ec</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.15rem; padding-left: 5px; padding-right: 3px;">Eclesiastes</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ct</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Cantares</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Is</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Isaías</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Jr</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jeremias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Lm</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.1rem; padding-left: 5px; padding-right: 3px;">Lamentações</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ez</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ezequiel</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Dn</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Daniel</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Os</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Oséias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Jl</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Joel</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Am</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Amós</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ob</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Obadias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Jn</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jonas</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Mq</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Miquéias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Na</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Naum</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Hc</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.2rem; padding-left: 5px; padding-right: 3px;">Habacuque</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Sf</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Sofonias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ag</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ageu</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Zc</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Zacarias</p></div>    
+</div>
+
+<div class="livro">
+    <div class="abLivro"><p class="abreviacao escritaLivros">Ml</p></div>
+    <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Malaquias</p></div>    
+</div>
+
+
+    </div>
+
+    <script src="../scripts/scriptMenuBiblia.js"></script>
+    <script src="../scripts/scriptBotoes.js"></script>
 </body>
 </html>

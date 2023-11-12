@@ -1,0 +1,73 @@
+#mainBiblia{
+    display: flex;
+    justify-content: center;
+}
+
+.containerLivros{
+    width: 70%;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.livro{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--pretoQuaseBranco);
+    width: 150px;
+    height: 55px;
+    border: 1px solid var(--brancoPreto);
+    border-radius: 5px;
+
+    box-shadow: 3px 3px 15px 1px var(--sombra);
+}
+
+.livro:hover{
+    cursor: pointer;
+    background-color: var(--quaseBranco);
+    border: 1px solid var(--pretoBranco);
+    
+}
+
+.livro:hover .escritaLivros{
+    color: var(--pretoBranco);
+}
+
+.livro:hover .abLivro{
+    border-right: 1px solid var(--pretoBranco);
+}
+
+.abLivro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 60px;
+    height: 53px;
+    border-right: 1px solid var(--brancoPreto);
+}
+
+.nomeLivro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 120px;
+    height: 54px;
+
+}
+
+.escritaLivros{
+    font-size: 1.3rem;
+    font-family: 'padrao';
+    color: var(--brancoPreto);
+}

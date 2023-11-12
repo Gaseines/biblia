@@ -2,6 +2,7 @@
 @import url(./background.css);
 @import url(./main.css);
 @import url(./mediaQuery.css);
+@import url(./styleBiblia.css);
 
 
 *{
@@ -16,6 +17,9 @@
     --cinzaClaroEscuro: #7b7b7b;
     --pretoBranco: black;
     --pretoAmarelo: black;
+    --pretoQuaseBranco: black;
+    --quaseBranco:lightgray;
+    --sombra:rgba(255, 255, 255, 0.350);
 }
 
 .light-mode:root{
@@ -24,4 +28,7 @@
     --cinzaClaroEscuro: #2A2B2F;
     --pretoBranco: white;
     --pretoAmarelo: orange;
+    --pretoQuaseBranco: lightgray;
+    --quaseBranco:black;
+    --sombra:rgba(0, 0, 0, 0.350);
 } 

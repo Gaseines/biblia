@@ -14,7 +14,6 @@ let background = document.querySelector('#background video')
 let htmlClass = document.querySelector('html')
 let casaStyle = document.querySelector('.casinha g')
 
-
 const abrirMenu = () => {
     if(menu.style.width == '150px'){
         menu.classList.remove('abreMenu')
@@ -60,7 +59,7 @@ const DarkLight = () => {
     
 
     if (srcLua === "lua.png") {
-        background.src = '../midias/planoDeFundo2.mp4'
+        
         htmlClass.classList.add('light-mode')
         bolinhaDarkLight.classList.add('lMode')
         bolinhaDarkLight.classList.remove('rMode')
@@ -68,7 +67,7 @@ const DarkLight = () => {
         casaStyle.style.fill = '#000000'
         LuaSol.src = '/midias/sol.png'
     } else {
-        background.src = '../midias/planoDeFundo.mp4'
+        
         htmlClass.classList.remove('light-mode')
         bolinhaDarkLight.classList.remove('lMode')
         bolinhaDarkLight.classList.add('rMode')
