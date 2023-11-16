@@ -60,21 +60,21 @@ const DarkLight = () => {
     
 
     if (srcLua === "lua.png") {
-        background.src = '../midias/planoDeFundo2.mp4'
+        background.src = './midias/planoDeFundo2.mp4'
         htmlClass.classList.add('light-mode')
         bolinhaDarkLight.classList.add('lMode')
         bolinhaDarkLight.classList.remove('rMode')
-        burguer.src = '../midias/burguer2.png'
+        burguer.src = './midias/burguer2.png'
         casaStyle.style.fill = '#000000'
-        LuaSol.src = '/midias/sol.png'
+        LuaSol.src = './midias/sol.png'
     } else {
-        background.src = '../midias/planoDeFundo.mp4'
+        background.src = './midias/planoDeFundo.mp4'
         htmlClass.classList.remove('light-mode')
         bolinhaDarkLight.classList.remove('lMode')
         bolinhaDarkLight.classList.add('rMode')
-        burguer.src = '../midias/burguer.png'
+        burguer.src = './midias/burguer.png'
         casaStyle.style.fill = '#ffffff'
-        LuaSol.src = '../midias/lua.png'
+        LuaSol.src = './midias/lua.png'
     }
 }
 
