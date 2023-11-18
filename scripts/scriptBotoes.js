@@ -2,9 +2,10 @@ const home = document.querySelector('.casinha')
 const biblia = document.querySelector('.btn-biblia')
 const topicos = document.querySelector('.btn-topicos')
 const bibliaMenu = document.querySelector('.bibliaMenu')
+const casinha = document.querySelector('.casinha')
 
 const irParaHome = () => {
-    window.location.href = 'principal.html'
+    window.location.href = '../index.html'
 }
 
 const abrirBiblia = () => {
@@ -33,7 +34,7 @@ const abrirTopicos = () => {
 
 
 
-
+casinha.addEventListener('click', irParaHome)
 bibliaMenu.addEventListener('click', abrirBiblia)
 topicos.addEventListener('click', abrirTopicos)
 biblia.addEventListener('click', abrirBiblia)

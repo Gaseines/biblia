@@ -1,33 +1,69 @@
 #mainBiblia{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.containerLivros{
-    width: 85%;
+.testamentos{
+    
+    color: var(--brancoPreto);
+    text-align: center;
+    font-size: 30px;
+    
+    width: 100%;
     max-width: 1440px;
-    height: 100vh;
+    margin-left: 20px;
+}
+
+hr{
+    background-color: var(--brancoPreto);
+    margin: 10px 0px 50px 20px;
+    width: 200px;
+}
+
+.containerLivrosAC{
+    width: 95%;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    max-width: 1440px;
+    
     display: flex;
     flex-direction: row;
 
     align-items: center;
-
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: flex-start;
+
+    
+}
+
+.containerLivrosDC{
+    width: 95%;
+    margin-left: 20px;
+    max-width: 1440px;
+    
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
 }
 
 .livro{
     margin: 10px;
     display: flex;
     flex-direction: row;
-
     background-color: var(--pretoQuaseBranco);
-    width: 150px;
+    width: 200px;
     height: 55px;
     border: 1px solid var(--brancoPreto);
     border-radius: 5px;
-
     box-shadow: 3px 3px 15px 1px var(--sombra);
+
+    text-align: center;
 }
 
 .livro:hover{
