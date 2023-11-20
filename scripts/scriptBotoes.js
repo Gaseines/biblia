@@ -15,8 +15,8 @@ const irParaHome = () => {
     
         alert('deu certo')
         document.addEventListener('DOMContentLoaded', function () {
-            html.classList.toggle('light-mode');
-        });
+            html.classList.toggle('light-mode')
+        })
     
 
 
