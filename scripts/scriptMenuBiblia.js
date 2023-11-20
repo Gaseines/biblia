@@ -8,7 +8,7 @@ let cabecalho = document.querySelector('#cabecalho')
 
 
 let bolinhaDarkLight = document.querySelector('.bolinha')
-var LuaSol = document.getElementById("btn-light-mode-p")
+let LuaSol = document.getElementById("btn-light-mode-p")
 let btnDarkLight = document.querySelector('.btn-light-mode')
 let background = document.querySelector('#background video')
 let htmlClass = document.querySelector('html')
