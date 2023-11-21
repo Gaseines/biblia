@@ -14,6 +14,8 @@ let background = document.querySelector('#background video')
 let htmlClass = document.querySelector('html')
 let casaStyle = document.querySelector('.casinha g')
 
+checkModoClaro()
+
 const abrirMenu = () => {
     if(menu.style.width == '150px'){
         menu.classList.remove('abreMenu')
@@ -56,25 +58,70 @@ const abrirMenu = () => {
 const DarkLight = () => {
     // Obtém apenas o nome do arquivo da URL da imagem
     const srcLua = LuaSol.src.split('/').pop()
+
+    
     
 
-    if (srcLua === "lua.png") {
+    
+
+        if(srcLua ==="lua.png"){
+
+        const valueSol = LuaSol.src = './midias/sol.png'
         
+
+
         htmlClass.classList.add('light-mode')
         bolinhaDarkLight.classList.add('lMode')
         bolinhaDarkLight.classList.remove('rMode')
+        LuaSol.src = '../midias/sol.png'
         burguer.src = '../midias/burguer2.png'
         casaStyle.style.fill = '#000000'
-        LuaSol.src = '/midias/sol.png'
-    } else {
+        localStorage.setItem("modoClaroSol", valueSol)
+        
+
+       }else {
         
         htmlClass.classList.remove('light-mode')
         bolinhaDarkLight.classList.remove('lMode')
         bolinhaDarkLight.classList.add('rMode')
+        LuaSol.src = '../midias/lua.png'
+        
         burguer.src = '../midias/burguer.png'
         casaStyle.style.fill = '#ffffff'
-        LuaSol.src = '../midias/lua.png'
+
+        localStorage.removeItem("modoClaroSol")
+        
+        
+        
     }
+
+    
+}
+
+function checkModoClaro(){
+    const getModoClaroSol = localStorage.getItem("modoClaroSol")
+    
+    
+
+
+if (getModoClaroSol) {
+    
+    
+    getModoClaroSol
+
+
+    LuaSol.src = '../midias/sol.png'
+    burguer.src = '../midias/burguer2.png'
+    casaStyle.style.fill = '#000000'
+
+   htmlClass.classList.add('light-mode')
+   bolinhaDarkLight.classList.add('lMode')
+   bolinhaDarkLight.classList.remove('rMode')
+   
+   
+
+   
+} 
 }
 
 

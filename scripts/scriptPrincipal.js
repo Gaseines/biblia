@@ -15,6 +15,9 @@ let htmlClass = document.querySelector('html')
 let casaStyle = document.querySelector('.casinha g')
 
 
+checkModoClaro()
+
+
 const abrirMenu = () => {
     if(menu.style.width == '150px'){
         menu.classList.remove('abreMenu')
@@ -57,31 +60,84 @@ const abrirMenu = () => {
 const DarkLight = () => {
     // Obtém apenas o nome do arquivo da URL da imagem
     const srcLua = LuaSol.src.split('/').pop()
+
+    
     
 
-    if (srcLua === "lua.png") {
-        background.src = './midias/planoDeFundo2.mp4'
+    
+
+        if(srcLua ==="lua.png"){
+
+        const valueSol = LuaSol.src = './midias/sol.png'
+        
+
+
         htmlClass.classList.add('light-mode')
         bolinhaDarkLight.classList.add('lMode')
         bolinhaDarkLight.classList.remove('rMode')
-        burguer.src = './midias/burguer2.png'
-        casaStyle.style.fill = '#000000'
-        LuaSol.src = './midias/sol.png'
-    } else {
-        background.src = './midias/planoDeFundo.mp4'
+        background.src = './midias/planoDeFundo2.mp4'
+        localStorage.setItem("modoClaroSol", valueSol)
+        
+
+       }else {
+        
         htmlClass.classList.remove('light-mode')
         bolinhaDarkLight.classList.remove('lMode')
         bolinhaDarkLight.classList.add('rMode')
+        LuaSol.src = './midias/lua.png'
+        background.src = './midias/planoDeFundo.mp4'
         burguer.src = './midias/burguer.png'
         casaStyle.style.fill = '#ffffff'
-        LuaSol.src = './midias/lua.png'
+
+        localStorage.removeItem("modoClaroSol")
+        localStorage.removeItem("modoClaroBack")
+        localStorage.removeItem("modoClaroBurguer")
+        localStorage.removeItem("modoClaroValue")
+        
+        
     }
+
+    
 }
+
+function checkModoClaro(){
+    const getModoClaroSol = localStorage.getItem("modoClaroSol")
+    const getModoClaroBack = localStorage.getItem("modoClaroBack")
+    const getModoClaroBurguer = localStorage.getItem("modoClaroBurguer")
+    const getModoClaroCasinha = localStorage.getItem("modoClaroCasinha")
+    
+
+
+if (getModoClaroSol) {
+    
+    getModoClaroBack
+    getModoClaroBurguer
+    getModoClaroCasinha
+    getModoClaroSol
+
+
+    LuaSol.src = './midias/sol.png'
+    background.src = './midias/planoDeFundo2.mp4'
+    burguer.src = './midias/burguer2.png'
+    casaStyle.style.fill = '#000000'
+
+   htmlClass.classList.add('light-mode')
+   bolinhaDarkLight.classList.add('lMode')
+   bolinhaDarkLight.classList.remove('rMode')
+   
+   
+
+   
+} 
+}
+
+    
 
 
 
 btnDarkLight.addEventListener('click', DarkLight)
 btn.addEventListener('click', abrirMenu)
+document.addEventListener( 'DOMContentLoaded', checkModoClaro())
 
 
 function mudouTamanho(){
@@ -111,3 +167,6 @@ function mudouTamanho(){
         },500)
     }
 }
+
+
+
