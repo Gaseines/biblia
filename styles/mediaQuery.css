@@ -50,6 +50,21 @@
     /*---------------------Bíblia--------------------------------*/
 
     
+    .container-cap{ 
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    th{
+        width: 200px;
+    }
+
+    .num-cap{
+        margin: 5px;
+    }
+
     
 
 }

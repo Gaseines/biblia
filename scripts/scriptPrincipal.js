@@ -77,6 +77,7 @@ const DarkLight = () => {
         bolinhaDarkLight.classList.remove('rMode')
         background.src = './midias/planoDeFundo2.mp4'
         localStorage.setItem("modoClaroSol", valueSol)
+        casaStyle.style.fill = '#000000'
         
 
        }else {
@@ -90,9 +91,6 @@ const DarkLight = () => {
         casaStyle.style.fill = '#ffffff'
 
         localStorage.removeItem("modoClaroSol")
-        localStorage.removeItem("modoClaroBack")
-        localStorage.removeItem("modoClaroBurguer")
-        localStorage.removeItem("modoClaroValue")
         
         
     }
