@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br" id="html-biblia" >
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../styles/geral.css">
     <title>Bíblia</title>
 </head>
@@ -31,7 +35,7 @@
         <div class="btn-light-mode">
             <div class="bolinha"></div>
         </div>
-        <img id="btn-light-mode-p" src="../midias/lua.png" alt="" >
+        <img id="btn-light-mode-p" src="../midias/lua.png">
     </div>
     
     </header>
@@ -48,12 +52,12 @@
 
             
 
-            <div class="livro">
+            <div class="livro abrir-genesis">
                 <div class="abLivro"><p class="abreviacao escritaLivros">Gn</p></div>
                 <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Gênesis</p></div>    
         </div>
 
-        <div class="livro">
+        <div class="livro abrir-exodo">
             <div class="abLivro"><p class="abreviacao escritaLivros">Êx</p></div>
             <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Êxodo</p></div>    
     </div>
@@ -247,7 +251,7 @@
 
 <!--                          Novo testamento                         -->
 
-<div class="testamentos">Novo Testamento</div>
+<div class="testamentos ">Novo Testamento</div>
 
         <hr>
 
@@ -391,75 +395,309 @@
 
 <!--                           GÊNESIS                                -->
 
-<div id="genesis">
-    <h1>GÊNESIS  </h1><img src="../midias/seta-direita-triangulo-branco.png" class="seta-direita">
-    <table>
-        <thead>
-        </thead>
-        <tr>
-            <th class="th-titulo">Criação de Deus e a queda do homem</th>
-            <th class="th-titulo">Noé e o dilúvio</th>
-            <th class="th-titulo">Primeras nações</th>
+
+    <div id="genesis" >
+        <h1 class="nome-livros-click nome-livros-click-genesis">GÊNESIS  </h1>
+    
+        <svg class="seta-direita seta-direita-genesis" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+          </svg>
+    
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th class="th-titulo">Criação de Deus e a queda do homem</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.1</div>
+                        <div class="num-cap">Cap.2</div>
+                        <div class="num-cap">Cap.3</div>
+                        <div class="num-cap">Cap.4</div>
+                    </div>
+                </th>
+    
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Noé e o dilúvio</th>
+    
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.5</div>
+                        <div class="num-cap">Cap.6</div>
+                        <div class="num-cap">Cap.7</div>
+                        <div class="num-cap">Cap.8</div>
+                        <div class="num-cap">Cap.9</div>
+                        <div class="num-cap">Cap.10</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Primeras nações</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.11</div>
+    
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">História de Abrão</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.12</div>
+                        <div class="num-cap">Cap.13</div>
+                        <div class="num-cap">Cap.14</div>
+    
+                    </div>
+                </th>
+                <tr>
+                    <th class="th-titulo">De Abrão para Abraão</th>
+                    <th>
+                        <div class="container-cap">
+                            <div class="num-cap">Cap.15</div>
+                            <div class="num-cap">Cap.16</div>
+                            <div class="num-cap">Cap.17</div>
+                            <div class="num-cap">Cap.18</div>
+                        </div>
+                    </th>
+                </tr>
+            </tr>
+            <tr>
+                <th class="th-titulo">As provas de Abraão</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.19</div>
+                        <div class="num-cap">Cap.20</div>
+                        <div class="num-cap">Cap.21</div>
+                        <div class="num-cap">Cap.22</div>
+                        <div class="num-cap">Cap.23</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">isaque e Rebeca</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.24</div>
+                    </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">História de Jacó</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.25</div>
+                        <div class="num-cap">Cap.26</div>
+                        <div class="num-cap">Cap.27</div>
+                        <div class="num-cap">Cap.28</div>
+                        <div class="num-cap">Cap.29</div>
+                        <div class="num-cap">Cap.30</div>
+                        <div class="num-cap">Cap.31</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Jacó se torna Israel</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.32</div>
+                        <div class="num-cap">Cap.33</div>
+                        <div class="num-cap">Cap.34</div>
+                        <div class="num-cap">Cap.35</div>
+                        <div class="num-cap">Cap.36</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">José vai para o Egito</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.37</div>
+                        <div class="num-cap">Cap.38</div>
+                        <div class="num-cap">Cap.39</div>
+                        <div class="num-cap">Cap.40</div>
+                        <div class="num-cap">Cap.41</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">José reencontra a família</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.42</div>
+                        <div class="num-cap">Cap.43</div>
+                        <div class="num-cap">Cap.44</div>
+                        <div class="num-cap">Cap.45</div>
+                        <div class="num-cap">Cap.46</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">A família de Jacó no Egito</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.47</div>
+                        <div class="num-cap">Cap.48</div>
+                        <div class="num-cap">Cap.49</div>
+                        <div class="num-cap">Cap.50</div>
+                    </div>
+                </th>
+            </tr>
+    
+    
+        </table>
+    </div>
+    
+    <div id="exodo">
+        <h1 class="nome-livros-click nome-livros-click-exodo">ÊXODO </h1>
+    
+        <div class="container-setas-livros">
+    
+            <svg class="seta-esquerda seta-esquerda-exodo" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15.248 6.352a1.2 1.2 0 0 1 0 1.696L11.297 12l3.951 3.952a1.2 1.2 0 0 1-1.696 1.696l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+            <svg class="seta-direita-2 seta-direita-exodo" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+        </div>
+    
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th class="th-titulo">Escravidão no Egito</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.1</div>
+                        <div class="num-cap">Cap.2</div>
+                    </div>
+                </th>
+    
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Moisés é chamado</th>
+    
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.3</div>
+                        <div class="num-cap">Cap.4</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Retorno ao Egito</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.5</div>
+                        <div class="num-cap">Cap.6</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">As dez pragas</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.7</div>
+                        <div class="num-cap">Cap.8</div>
+                        <div class="num-cap">Cap.9</div>
+                        <div class="num-cap">Cap.10</div>
+                        <div class="num-cap">Cap.11</div>
+                    </div>
+                </th>
+                <tr>
+                    <th class="th-titulo">Saída do Egito para o Sinai</th>
+                    <th>
+                        <div class="container-cap">
+                            <div class="num-cap">Cap.12</div>
+                            <div class="num-cap">Cap.13</div>
+                            <div class="num-cap">Cap.14</div>
+                            <div class="num-cap">Cap.15</div>
+                            <div class="num-cap">Cap.16</div>
+                            <div class="num-cap">Cap.17</div>
+                            <div class="num-cap">Cap.18</div>
+                        </div>
+                    </th>
+                </tr>
+            </tr>
+            <tr>
+                <th class="th-titulo">As leis de Deus</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.19</div>
+                        <div class="num-cap">Cap.20</div>
+                        <div class="num-cap">Cap.21</div>
+                        <div class="num-cap">Cap.22</div>
+                        <div class="num-cap">Cap.23</div>
+                        <div class="num-cap">Cap.24</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Revelação do tabernáculo</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.25</div>
+                        <div class="num-cap">Cap.26</div>
+                        <div class="num-cap">Cap.27</div>
+                        <div class="num-cap">Cap.28</div>
+                        <div class="num-cap">Cap.29</div>
+                        <div class="num-cap">Cap.30</div>
+                        <div class="num-cap">Cap.31</div>
+                    </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">O pecado de Israel</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.32</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">A renovação da aliança</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.33</div>
+                        <div class="num-cap">Cap.34</div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">A construção do tabernáculo</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.35</div>
+                        <div class="num-cap">Cap.36</div>
+                        <div class="num-cap">Cap.37</div>
+                        <div class="num-cap">Cap.38</div>
+                        <div class="num-cap">Cap.39</div>
+                        <div class="num-cap">Cap.40</div>
+                    </div>
+                </th>
+            </tr>
+    
+    
+        </table>
+    </div>
+
+
             
-        </tr>
-        <tr>
-            <th>
-                <div class="container-cap">
-                    <div class="num-cap">Cap.1</div>
-                    <div class="num-cap">Cap.2</div>
-                    <div class="num-cap">Cap.3</div>
-                    <div class="num-cap">Cap.4</div>
-                </div>
-            </th>
-            <th>
-                <div class="container-cap">
-                    <div class="num-cap">Cap.5</div>
-                    <div class="num-cap">Cap.6</div>
-                    <div class="num-cap">Cap.7</div>
-                    <div class="num-cap">Cap.8</div>
-                    <div class="num-cap">Cap.9</div>
-                    <div class="num-cap">Cap.10</div>
-                </div>
-            </th>
-            <th>
-                <div class="container-cap">
-                    <div class="num-cap">Cap.11</div>
-                    
-                </div>
-            </th>
-        </tr>
-        <tr>
-            <th class="th-titulo">História de Abrão</th>
-            <th class="th-titulo">De Abrão para Abraão</th>
-            <th class="th-titulo">As provas de Abraão</th>
-        </tr>
-        <tr>
-            <th>
-                <div class="container-cap">
-                    <div class="num-cap">Cap.12</div>
-                    <div class="num-cap">Cap.13</div>
-                    <div class="num-cap">Cap.14</div>
-                    
-                </div>
-            </th>
-            <th>
-                <div class="container-cap">
-                    <div class="num-cap">Cap.15</div>
-                    <div class="num-cap">Cap.16</div>
-                    <div class="num-cap">Cap.17</div>
-                    <div class="num-cap">Cap.18</div>
-                </div>
-            </th>
-            <th></th>
-        </tr>
-
-    </table>
-</div>
-
+            
     
 
     <script src="../scripts/scriptMenuBiblia.js"></script>
     <script src="../scripts/scriptBotoes.js"></script>
     <script src="../scripts/livrosScript.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon-1.4.0.js"></script>
 </body>
 </html>

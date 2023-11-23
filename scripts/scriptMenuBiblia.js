@@ -14,7 +14,7 @@ let background = document.querySelector('#background video')
 let htmlClass = document.querySelector('html')
 let casaStyle = document.querySelector('.casinha g')
 
-let setaDireita = document.querySelector(".seta-direita")
+
 
 checkModoClaro()
 
@@ -79,7 +79,8 @@ const DarkLight = () => {
         burguer.src = '../midias/burguer2.png'
         casaStyle.style.fill = '#000000'
         localStorage.setItem("modoClaroSol", valueSol)
-        setaDireita.src = '../midias/seta-direita-triangulo-preto.png'
+        
+        
         
 
        }else {
@@ -88,7 +89,7 @@ const DarkLight = () => {
         bolinhaDarkLight.classList.remove('lMode')
         bolinhaDarkLight.classList.add('rMode')
         LuaSol.src = '../midias/lua.png'
-        setaDireita.src = '../midias/seta-direita-triangulo-branco.png'
+        
         
         burguer.src = '../midias/burguer.png'
         casaStyle.style.fill = '#ffffff'
@@ -117,7 +118,8 @@ if (getModoClaroSol) {
     LuaSol.src = '../midias/sol.png'
     burguer.src = '../midias/burguer2.png'
     casaStyle.style.fill = '#000000'
-    setaDireita.src = '../midias/seta-direita-triangulo-preto.png'
+    
+    
 
    htmlClass.classList.add('light-mode')
    bolinhaDarkLight.classList.add('lMode')

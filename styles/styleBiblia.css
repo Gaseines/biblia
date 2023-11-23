@@ -2,11 +2,14 @@
 
 
 #mainBiblia{
-    display: none;
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 50px;
 }
 
 .testamentos{
@@ -112,11 +115,23 @@ hr{
     color: var(--brancoPreto);
 }
 
+
+
 #genesis{
-    display: flex;
+    
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+#exodo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 h1{
@@ -125,11 +140,30 @@ h1{
     padding: 30px;
 }
 
-.seta-direita{
+.nome-livros-click{
+    cursor: pointer;
+}
 
+.container-setas-livros{
+    display: flex;
+    flex-direction: row;
+}
+
+.seta-direita-2{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.seta-direita-2:hover{
+    cursor: pointer;
+
+    transform: translateX(3px);
+}
+
+
+.seta-direita{
+    
 
     margin-left: 200px;
-    width: 20px;
     margin-bottom: 30px;
 }
 
@@ -140,7 +174,22 @@ h1{
     
 }
 
+.seta-esquerda{
+    
+
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.seta-esquerda:hover{
+    cursor: pointer;
+
+    transform: translateX(-3px);
+    
+}
+
 table{
+    
     width: 90%;
     max-width: 1000px;
     border-collapse: collapse;
@@ -177,6 +226,7 @@ th{
 }
 
 .num-cap{
+    background-color: var(--pretoQuaseBranco);
     padding: 10px;
     margin: 10px;
     border: 1px solid var(--brancoPreto);
@@ -187,5 +237,66 @@ th{
     cursor: pointer;
 
     color: var(--pretoBranco);
-    background-color: var(--quaseBranco);
+    background-color: var(--brancoPreto);
 }
+
+/* ------------------------------ANIMAÇÕES---------------------------------*/
+
+.sair-esquerda{
+    animation: sair-esquerda 1s ease-in-out forwards;
+}
+
+.sair-direita{
+    animation: sair-direita 1s ease-in-out forwards;
+}
+
+.entrar{
+    
+    animation: entrar 1s ease-in-out forwards;
+}
+
+.voltar{
+    animation: voltar 1s ease-in-out forwards;
+}
+
+
+@keyframes sair-esquerda{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        display: none;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes sair-direita{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        display: none;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes entrar{
+    0%{
+        
+        transform: translateX(100%);
+    }
+    100%{
+        
+        transform: translateX(0%);
+    }
+}
+
+@keyframes voltar{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
