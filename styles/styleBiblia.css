@@ -115,10 +115,7 @@ hr{
     color: var(--brancoPreto);
 }
 
-
-
-#genesis{
-    
+.style-livros{
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -126,13 +123,7 @@ hr{
     margin-bottom: 50px;
 }
 
-#exodo{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
+
 
 h1{
     color: var(--brancoPreto);

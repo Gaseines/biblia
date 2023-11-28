@@ -166,5 +166,32 @@ function mudouTamanho(){
     }
 }
 
+function clicouFora(){
+    if(menu.style.width == '150px'){
+        menu.classList.remove('abreMenu')
+        menu.classList.add('abreMenu2')
+        menu.style.width = '0px'
+        btn.classList.remove('movMenu')
+        btn.classList.add('movMenu2')
+        burguer.classList.remove('movMenu')
+        burguer.classList.add('movMenu2')
+        casa.classList.remove('casaR')
+        casa.classList.add('casaL')
+        
+        setTimeout(() =>{
+            containerDarkLight.style.opacity = '1'
+        }, 550)
+
+        setTimeout(() => {
+            menu.classList.remove('abreMenu2')
+            btn.classList.remove('movMenu2')
+            burguer.classList.remove('movMenu2')
+            casa.classList.remove('casaL')
+        }, 1000)
+        
+    }
+
+}
+
 
 

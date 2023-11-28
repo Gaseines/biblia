@@ -3,6 +3,7 @@
 @import url(./main.css);
 @import url(./mediaQuery.css);
 @import url(./styleBiblia.css);
+@import url(./styleLeitura.css);
 
 
 *{
@@ -20,6 +21,7 @@
     --pretoQuaseBranco: black;
     --quaseBranco:lightgray;
     --sombra:rgba(255, 255, 255, 0.350);
+    --begeCinza: #F6E6CC; 
 }
 
 .light-mode:root{
@@ -31,4 +33,9 @@
     --pretoQuaseBranco: lightgray;
     --quaseBranco:black;
     --sombra:rgba(0, 0, 0, 0.350);
+    --begeCinza: #585859; 
 } 
+
+.container{
+    height: 100vh;
+  }

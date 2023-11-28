@@ -11,26 +11,29 @@
     <title>Bíblia</title>
 </head>
 <body style="background-color: var(--pretoBranco);" onresize="mudouTamanho()">
+
+        <!--Inicio Menu-->
     <div style="margin-bottom: 30px;" id="cabecalho">
         <header>
     
             
-    
+        <!--Botões redirecionais-->
             <div class="sidebar">
                 <a href="./biblia.html" class="sidebarOpc">Bíblia</a>
                 <a href="./topicos.html" class="sidebarOpc">Tópicos</a>
             </div>
+        <!--Icone burguer para celular-->
             <div id="menu-btn"><img src="../midias/burguer.png" class="burguer"></div>
             
         
-    
+        <!--Icone casinha HOME-->
             <svg class="casinha" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" viewBox="0,0,256,256"
     style="fill:#000000;">
     <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-0.26712,0.00003 -0.52312,0.10694 -0.71094,0.29688l-10.08594,8.80078c-0.12774,0.09426 -0.20313,0.24359 -0.20312,0.40234c0,0.27614 0.22386,0.5 0.5,0.5h2.5v8c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-6h4v6c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-8h2.5c0.27614,0 0.5,-0.22386 0.5,-0.5c0.00001,-0.15876 -0.07538,-0.30808 -0.20312,-0.40234l-10.08008,-8.79492c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.18782,-0.18994 -0.44382,-0.29684 -0.71094,-0.29687z"></path></g></g>
     </svg>
     
     
-    
+        <!--Botão modo claro e escuro-->
     <div class="container-light-mode">
         <div class="btn-light-mode">
             <div class="bolinha"></div>
@@ -39,10 +42,13 @@
     </div>
     
     </header>
+    <!--Fim Menu-->
     
     </div>
 
-    <div id="mainBiblia">
+    <div id="mainBiblia" onclick="clicouFora()">
+
+<!--                          Antigo testamento                         -->
 
         <div class="testamentos">Antigo Testamento</div>
 
@@ -62,187 +68,187 @@
             <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Êxodo</p></div>    
     </div>
 
-    <div class="livro">
+    <div class="livro abrir-levitico">
         <div class="abLivro"><p class="abreviacao escritaLivros">Lv</p></div>
         <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Levítico</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-numeros">
     <div class="abLivro"><p class="abreviacao escritaLivros">Nm</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Números</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-deuteronomio">
     <div class="abLivro"><p class="abreviacao escritaLivros">Dt</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.1rem; padding-left: 5px; padding-right: 3px;">Deuteronômio</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-josue">
     <div class="abLivro"><p class="abreviacao escritaLivros">Js</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Josué</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-juizes">
     <div class="abLivro"><p class="abreviacao escritaLivros">Jz</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Juízes</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-rute">
     <div class="abLivro"><p class="abreviacao escritaLivros">Rt</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Rute</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-um-samuel">
     <div class="abLivro"><p class="abreviacao escritaLivros">1Sm</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Samuel</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-dois-samuel">
     <div class="abLivro"><p class="abreviacao escritaLivros">2Sm</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Samuel</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-um-reis">
     <div class="abLivro"><p class="abreviacao escritaLivros">1Rs</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Reis</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-dois-reis">
     <div class="abLivro"><p class="abreviacao escritaLivros">2Rs</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Reis</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-um-cronicas">
     <div class="abLivro"><p class="abreviacao escritaLivros">1Cr</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">1 Crônicas</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-dois-cronicas">
     <div class="abLivro"><p class="abreviacao escritaLivros">2Cr</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">2 Crônicas</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-esdras">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ed</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Esdras</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-neemias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ne</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Neemias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-ester">
     <div class="abLivro"><p class="abreviacao escritaLivros">Et</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ester</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-jo">
     <div class="abLivro"><p class="abreviacao escritaLivros">Jó</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jó</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-salmos">
     <div class="abLivro"><p class="abreviacao escritaLivros">Sl</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Salmos</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-proverbios">
     <div class="abLivro"><p class="abreviacao escritaLivros">Pv</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Provérbios</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-eclesiastes">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ec</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.15rem; padding-left: 5px; padding-right: 3px;">Eclesiastes</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-cantares">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ct</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Cantares de Salomão</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-isaias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Is</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Isaías</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-jeremias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Jr</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jeremias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-lamentacoes">
     <div class="abLivro"><p class="abreviacao escritaLivros">Lm</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.1rem; padding-left: 5px; padding-right: 3px;">Lamentações de Jeremias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-ezequiel">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ez</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ezequiel</p></div>    
 </div>
-
-<div class="livro">
+ 
+<div class="livro abrir-daniel">
     <div class="abLivro"><p class="abreviacao escritaLivros">Dn</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Daniel</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-oseias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Os</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Oséias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-joel">
     <div class="abLivro"><p class="abreviacao escritaLivros">Jl</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Joel</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-amos">
     <div class="abLivro"><p class="abreviacao escritaLivros">Am</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Amós</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-obadias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ob</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Obadias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-jonas">
     <div class="abLivro"><p class="abreviacao escritaLivros">Jn</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Jonas</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-miqueias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Mq</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Miquéias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-naum">
     <div class="abLivro"><p class="abreviacao escritaLivros">Na</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Naum</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-habacuque">
     <div class="abLivro"><p class="abreviacao escritaLivros">Hc</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros" style="font-size: 1.2rem; padding-left: 5px; padding-right: 3px;">Habacuque</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-sofonias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Sf</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Sofonias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-ageu">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ag</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Ageu</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-zacarias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Zc</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Zacarias</p></div>    
 </div>
 
-<div class="livro">
+<div class="livro abrir-malaquias">
     <div class="abLivro"><p class="abreviacao escritaLivros">Ml</p></div>
     <div class="nomeLivro"><p class="escritaNomeLivro escritaLivros">Malaquias</p></div>    
 </div>
@@ -393,10 +399,10 @@
 </div>
 </div>
 
-<!--                           GÊNESIS                                -->
+    <!--                           GÊNESIS                                -->
 
 
-    <div id="genesis" >
+    <div id="genesis" class="style-livros" onclick="clicouFora()" >
         <h1 class="nome-livros-click nome-livros-click-genesis">GÊNESIS  </h1>
     
         <svg class="seta-direita seta-direita-genesis" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -551,8 +557,10 @@
     
         </table>
     </div>
+
+    <!--                           ÊXODO                                  -->
     
-    <div id="exodo">
+    <div id="exodo" class="style-livros" onclick="clicouFora()">
         <h1 class="nome-livros-click nome-livros-click-exodo">ÊXODO </h1>
     
         <div class="container-setas-livros">
@@ -690,7 +698,378 @@
         </table>
     </div>
 
+    <!--                           LEVÍTICO                                -->
 
+    <div id="levitico" class="style-livros" onclick="clicouFora()">
+        <h1 class="nome-livros-click nome-livros-click-levitico">LEVÍTICO </h1>
+    
+        <div class="container-setas-livros">
+    
+            <svg class="seta-esquerda seta-esquerda-levitico" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15.248 6.352a1.2 1.2 0 0 1 0 1.696L11.297 12l3.951 3.952a1.2 1.2 0 0 1-1.696 1.696l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+            <svg class="seta-direita-2 seta-direita-levitico" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+        </div>
+    
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th class="th-titulo">As ofertas do povo</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.1</div>
+                        <div class="num-cap">Cap.2</div>
+                        <div class="num-cap">Cap.3</div>
+                        <div class="num-cap">Cap.4</div>
+                        <div class="num-cap">Cap.5</div>
+                    </div>
+                </th>
+    
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">As normas</th>
+    
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.6</div>
+                        <div class="num-cap">Cap.7</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">A instituição do sacerdócio</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.8</div>
+                        <div class="num-cap">Cap.9</div>
+                        <div class="num-cap">Cap.10</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Impurezas e Purezas</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.11</div>
+                        <div class="num-cap">Cap.12</div>
+                    </div>
+                </th>
+                <tr>
+                    <th class="th-titulo">Doenças e tratamentos</th>
+                    <th>
+                        <div class="container-cap">
+                            <div class="num-cap">Cap.13</div>
+                            <div class="num-cap">Cap.14</div>
+                            <div class="num-cap">Cap.15</div>
+                        </div>
+                    </th>
+                </tr>
+            </tr>
+            <tr>
+                <th class="th-titulo">Código de santidade</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.16</div>
+                        <div class="num-cap">Cap.17</div>
+                        <div class="num-cap">Cap.18</div>
+                        <div class="num-cap">Cap.19</div>
+                        <div class="num-cap">Cap.20</div>
+                        
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Regras gerais</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.21</div>
+                        <div class="num-cap">Cap.22</div>
+                        <div class="num-cap">Cap.23</div>
+        
+                    </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Agradando ao Deus santo</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.24</div>
+                        <div class="num-cap">Cap.25</div>
+                        <div class="num-cap">Cap.26</div>
+                        <div class="num-cap">Cap.27</div>
+                    </div>
+                </th>
+            </tr>
+           
+    
+    
+        </table>
+    </div>
+
+    <!--                           NÚMEROS                                -->
+
+    <div id="numeros" class="style-livros" onclick="clicouFora()">
+        <h1 class="nome-livros-click nome-livros-click-numeros">NÚMEROS </h1>
+    
+        <div class="container-setas-livros">
+    
+            <svg class="seta-esquerda seta-esquerda-numeros" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15.248 6.352a1.2 1.2 0 0 1 0 1.696L11.297 12l3.951 3.952a1.2 1.2 0 0 1-1.696 1.696l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+            <svg class="seta-direita-2 seta-direita-numeros" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+        </div>
+    
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th class="th-titulo">Censo e distribuição das tribos</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.1</div>
+                        <div class="num-cap">Cap.2</div>
+                        <div class="num-cap">Cap.3</div>
+                        <div class="num-cap">Cap.4</div>
+                    </div>
+                </th>
+    
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Regulamentos</th>
+    
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.5</div>
+                        <div class="num-cap">Cap.6</div>
+                        <div class="num-cap">Cap.7</div>
+                        <div class="num-cap">Cap.8</div>
+                        <div class="num-cap">Cap.9</div>
+                        <div class="num-cap">Cap.10</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Jornada pelo deserto</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.11</div>
+                        <div class="num-cap">Cap.12</div>
+                        <div class="num-cap">Cap.13</div>
+                        <div class="num-cap">Cap.14</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Regulamentos e desafios</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.15</div>
+                        <div class="num-cap">Cap.16</div>
+                        <div class="num-cap">Cap.17</div>
+                    </div>
+                </th>
+                <tr>
+                    <th class="th-titulo">Responsabilidades dos levitas</th>
+                    <th>
+                        <div class="container-cap">
+                            <div class="num-cap">Cap.18</div>
+                            <div class="num-cap">Cap.19</div>
+                        </div>
+                    </th>
+                </tr>
+            </tr>
+            <tr>
+                <th class="th-titulo">Jornada no deserto</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.20</div>
+                        <div class="num-cap">Cap.21</div>
+                        <div class="num-cap">Cap.22</div>
+                        <div class="num-cap">Cap.23</div>
+                        <div class="num-cap">Cap.24</div>
+                        <div class="num-cap">Cap.25</div>
+                        
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Censo e regras</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.26</div>
+                        <div class="num-cap">Cap.27</div>
+                        <div class="num-cap">Cap.28</div>
+                        <div class="num-cap">Cap.29</div>
+                        <div class="num-cap">Cap.30</div>
+                    </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">Na fronteira da terra prometida</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.31</div>
+                        <div class="num-cap">Cap.32</div>
+                        <div class="num-cap">Cap.33</div>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <th class="th-titulo">Regulamentos para assentamento em Canaã</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.34</div>
+                        <div class="num-cap">Cap.35</div>
+                        <div class="num-cap">Cap.36</div>
+                    </div>
+                </th>
+            </tr>
+           
+    
+    
+        </table>
+    </div>
+
+    <!--                           DEUTERONÔMIO                                -->
+
+    <div id="deuteronomio" class="style-livros" onclick="clicouFora()">
+        <h1 class="nome-livros-click nome-livros-click-deuteronomio">DEUTERONÔMIO </h1>
+    
+        <div class="container-setas-livros">
+    
+            <svg class="seta-esquerda seta-esquerda-deuteronomio" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15.248 6.352a1.2 1.2 0 0 1 0 1.696L11.297 12l3.951 3.952a1.2 1.2 0 0 1-1.696 1.696l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+            <svg class="seta-direita-2 seta-direita-deuteronomio" color="var(--brancoPreto)" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+              </svg>
+    
+        </div>
+    
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th class="th-titulo">Aprendendo com o passado</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.1</div>
+                        <div class="num-cap">Cap.2</div>
+                        <div class="num-cap">Cap.3</div>
+                        
+                    </div>
+                </th>
+    
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Moisés exorta Israel</th>
+    
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.4</div>
+                        <div class="num-cap">Cap.5</div>
+                        <div class="num-cap">Cap.6</div>
+                        <div class="num-cap">Cap.7</div>
+                        
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Regras para se viver</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.8</div>
+                        <div class="num-cap">Cap.9</div>
+                        <div class="num-cap">Cap.10</div>
+                        <div class="num-cap">Cap.11</div>
+                    </div>
+                </th>
+    
+            </tr>
+            <tr>
+                <th class="th-titulo">Adoração a Deus</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.12</div>
+                        <div class="num-cap">Cap.13</div>
+                        <div class="num-cap">Cap.14</div>
+                        <div class="num-cap">Cap.15</div>
+                    </div>
+                </th>
+                <tr>
+                    <th class="th-titulo">A liderança do povo</th>
+                    <th>
+                        <div class="container-cap">
+                            <div class="num-cap">Cap.16</div>
+                            <div class="num-cap">Cap.17</div>
+                            <div class="num-cap">Cap.18</div>
+                            <div class="num-cap">Cap.19</div>
+                            <div class="num-cap">Cap.20</div>
+                        </div>
+                    </th>
+                </tr>
+            </tr>
+            <tr>
+                <th class="th-titulo">A vida individual e comunitária</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.21</div>
+                        <div class="num-cap">Cap.22</div>
+                        <div class="num-cap">Cap.23</div>
+                        <div class="num-cap">Cap.24</div>
+                        <div class="num-cap">Cap.25</div>
+                        <div class="num-cap">Cap.26</div>
+                        
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">A renovação da aliança</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.27</div>
+                        <div class="num-cap">Cap.28</div>
+                        <div class="num-cap">Cap.29</div>
+                        <div class="num-cap">Cap.30</div>
+                    </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="th-titulo">O final da vida de Moisés</th>
+                <th>
+                    <div class="container-cap">
+                        <div class="num-cap">Cap.31</div>
+                        <div class="num-cap">Cap.32</div>
+                        <div class="num-cap">Cap.33</div>
+                        <div class="num-cap">Cap.34</div>
+                    </div>
+                </th>
+            </tr>
+
+           
+    
+    
+        </table>
+    </div>
             
             
     

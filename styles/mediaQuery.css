@@ -57,8 +57,28 @@
         
     }
 
-    
+    /*--------------------Leitura--------------------------------*/
 
+    .capitulo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-textos{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        
+        
+    }
+
+    .texto{
+        margin-top: 20px;
+        width: 450px;
+        max-height: 250px;
+    }
 
     
 

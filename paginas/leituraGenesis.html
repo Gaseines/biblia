@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html-biblia" >
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../styles/geral.css">
+    <title>Bíblia</title>
+</head>
+<body style="background-color: var(--pretoBranco);" onresize="mudouTamanho()">
+
+        <!--Inicio Menu-->
+    <div style="margin-bottom: 30px;" id="cabecalho">
+        <header>
+    
+            
+        <!--Botões redirecionais-->
+            <div class="sidebar">
+                <a href="./biblia.html" class="sidebarOpc">Bíblia</a>
+                <a href="./topicos.html" class="sidebarOpc">Tópicos</a>
+            </div>
+        <!--Icone burguer para celular-->
+            <div id="menu-btn"><img src="../midias/burguer.png" class="burguer"></div>
+            
+        
+        <!--Icone casinha HOME-->
+            <svg class="casinha" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" viewBox="0,0,256,256"
+    style="fill:#000000;">
+    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-0.26712,0.00003 -0.52312,0.10694 -0.71094,0.29688l-10.08594,8.80078c-0.12774,0.09426 -0.20313,0.24359 -0.20312,0.40234c0,0.27614 0.22386,0.5 0.5,0.5h2.5v8c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-6h4v6c0,0.552 0.448,1 1,1h4c0.552,0 1,-0.448 1,-1v-8h2.5c0.27614,0 0.5,-0.22386 0.5,-0.5c0.00001,-0.15876 -0.07538,-0.30808 -0.20312,-0.40234l-10.08008,-8.79492c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.18782,-0.18994 -0.44382,-0.29684 -0.71094,-0.29687z"></path></g></g>
+    </svg>
+    
+    
+        <!--Botão modo claro e escuro-->
+    <div class="container-light-mode">
+        <div class="btn-light-mode">
+            <div class="bolinha"></div>
+        </div>
+        <img id="btn-light-mode-p" src="../midias/lua.png">
+    </div>
+    
+    </header>
+    <!--Fim Menu-->
+    
+    </div>
+
+    <div id="main-leitura" onclick="clicouFora()">
+    
+    <!--Inicio menu de interações-->
+    <div class="interacoes">
+    <!--Seta esquerda-->
+        <svg class="setas-padrao" color="var(--brancoPreto)" width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15.248 6.352a1.2 1.2 0 0 1 0 1.696L11.297 12l3.951 3.952a1.2 1.2 0 0 1-1.696 1.696l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0Z" clip-rule="evenodd"></path>
+          </svg>
+    <!--Livro e capítulo-->
+        <div class="opc-livro escrita">GÊNESIS</div>
+        <div class="opc-capitulo escrita">01</div>
+
+    <!--Seta direita-->
+        <svg class="setas-padrao" color="var(--brancoPreto)" width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z" clip-rule="evenodd"></path>
+          </svg>
+    </div>
+    <!--Fim menu de interações-->
+
+    <div class="capitulo">
+        <div class="num-titulo-container">
+            <div class="num-cap-leitura">1</div>
+            <div class="titulo">A criação do universo e da raça humana</div>
+        </div>
+        <div class="container-textos">
+            <div class="texto">
+                <div class="versiculos">
+                    <num>1</num>
+                    No princípio criou Deus o céu e a terra.
+                </div>
+                <div class="versiculos">
+                    <num>2</num>
+                    E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.
+                </div>
+                <div class="versiculos">
+                    <num>3</num>
+                    E disse Deus: Haja luz; e houve luz.
+                </div>
+            </div>
+                <div class="texto">
+                    <div class="versiculos">
+                        <num>4</num>
+                        E viu Deus que era boa a luz; e fez Deus separação entre a luz e as trevas.
+                    </div>
+                    <div class="versiculos">
+                        <num>5</num>
+                        E Deus chamou à luz Dia; e às trevas chamou Noite. E foi a tarde e a manhã, o dia primeiro.
+                    </div>
+                    <div class="versiculos">
+                        <num>6</num>
+                        E disse Deus: Haja uma expansão no meio das águas, e haja separação entre águas e águas
+                    </div>
+                </div>
+                <div class="texto">
+                    <div class="versiculos">
+                        <num>7</num>
+                        E fez Deus a expansão, e fez separação entre as águas que estavam debaixo da expansão e as águas que estavam sobre a expansão; e assim foi.
+                    </div>
+                    <div class="versiculos">
+                        <num>8</num>
+                        E chamou Deus à expansão Céus, e foi a tarde e a manhã, o dia segundo.
+                    </div>
+                    <div class="versiculos">
+                        <num>9</num>
+                        E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar; e apareça a porção seca; e assim foi.
+                </div>
+                </div>
+                <div class="texto">
+                    <div class="versiculos">
+                        <num>10</num>
+                        E chamou Deus à porção seca Terra; e ao ajuntamento das águas chamou Mares; e viu Deus que era bom.
+                    </div>
+                    <div class="versiculos">
+                        <num>11</num>
+                        E disse Deus: Produza a terra erva verde, erva que dê semente, árvore frutífera que dê fruto segundo a sua espécie, cuja semente está nela sobre a terra; e assim foi.
+                    </div>
+                    <div class="versiculos">
+                        <num>12</num>
+                        E a terra produziu erva, erva dando semente conforme a sua espécie, e a árvore frutífera, cuja semente está nela conforme a sua espécie; e viu Deus que era bom.
+                </div>
+                </div>
+                <div class="texto">
+                    <div class="versiculos">
+                        <num>13</num>
+                        E foi a tarde e a manhã, o dia terceiro.
+                    </div>
+                    <div class="versiculos">
+                        <num>14</num>
+                        E disse Deus: Haja luminares na expansão dos céus, para haver separação entre o dia e a noite; e sejam eles para sinais e para tempos determinados e para dias e anos.
+                    </div>
+                    <div class="versiculos">
+                        <num>15</num>
+                        E sejam para luminares na expansão dos céus, para iluminar a terra; e assim foi.
+                    </div>
+                </div>
+        </div>
+            
+        
+    </div>
+    
+    
+    
+    
+    </div>
+
+            
+            
+    
+
+    <script src="../scripts/scriptMenuBiblia.js"></script>
+    <script src="../scripts/scriptBotoes.js"></script>
+    
+</body>
+</html>
