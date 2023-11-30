@@ -1,5 +1,6 @@
 const g2 = document.querySelector('.genesis-dois-container')
 const g1 = document.querySelector('.genesis-um-container')
+const numCap = document.querySelector('.opc-capitulo')
 
 const setaEsquerda = document.querySelector('.seta-esquerda')
 const setaDireita = document.querySelector('.seta-direita')
@@ -12,7 +13,7 @@ checkCap()
 
 function checkCap(){
     
-    const numCap = document.querySelector('.opc-capitulo')
+    
 
     const getCap1 = sessionStorage.getItem("1")
 
@@ -46,6 +47,7 @@ const setaDireitaFunction = () =>{
     if(getCap1){
         g1.classList.remove('voltar')
         g1.classList.add('sair-esquerda')
+        numCap.innerHTML = "02"
 
 
         setTimeout(() =>{
@@ -60,14 +62,12 @@ const setaDireitaFunction = () =>{
 
     if(getCap2){
         g2.classList.remove('voltar')
+        g2.classList.remove('entrar')
         g2.classList.add('sair-esquerda')
 
 
         setTimeout(() =>{
-            g3.style.display = "flex"
-            g3.classList.add('entrar')
-            sessionStorage.clear()
-            sessionStorage.setItem("3", "cap")
+            
         },1000)
     }
 
@@ -80,12 +80,15 @@ const setaEsquerdaFunction = () =>{
         g2.classList.add('sair-direita')
         g2.classList.remove('entrar')
         g2.classList.remove('voltar')
+        numCap.innerHTML = "01"
 
         setTimeout(() =>{
             g1.style.display = "flex"
             g1.classList.add('voltar')
             g1.classList.remove('sair-esquerda')
-        })
+            sessionStorage.clear()
+            sessionStorage.setItem("1", "cap")
+        },1000)
     }
 }
 
