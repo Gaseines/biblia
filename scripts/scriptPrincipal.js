@@ -15,6 +15,9 @@ let htmlClass = document.querySelector('html')
 let casaStyle = document.querySelector('.casinha g')
 
 
+function clear(){
+    sessionStorage.clear()
+}
 checkModoClaro()
 
 

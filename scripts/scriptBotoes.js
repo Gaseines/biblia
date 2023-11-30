@@ -12,20 +12,20 @@ const bolinha = document.querySelector('bolinha')
 
 const irParaHome = () => {
     window.location.href = '../index.html'  
-
+    
 }
 
 
 
 const abrirBiblia = () => {
     window.location.href = 'paginas/biblia.html';
-
+    
 
 }
 
 const abrirTopicos = () => {
     window.location.href = 'paginas/topicos.html';
-
+    
     
 
 }

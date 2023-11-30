@@ -194,7 +194,7 @@ const direitaDeuteronomio = () =>{
 
 const voltarBiblia = () => {
     window.location.href = '../paginas/biblia.html';
-
+    sessionStorage.clear()
 
 }
 
